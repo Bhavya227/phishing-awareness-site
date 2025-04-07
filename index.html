@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phishing Awareness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ Phishing Email Awareness</h1>
+
+    <section id="examples">
+      <h2>📧 Example Phishing Email</h2>
+      <div class="email fake">
+        <p><strong>From:</strong> security@paypal-login.com</p>
+        <p><strong>Subject:</strong> Urgent: Account Suspended</p>
+        <p>Dear user, your PayPal account has been suspended. Please <a href="#">click here</a> to verify your information.</p>
+      </div>
+      <ul class="tips">
+        <li>⚠️ Suspicious sender email (not @paypal.com)</li>
+        <li>⚠️ Urgent tone and scare tactic</li>
+        <li>⚠️ Unusual link URL</li>
+      </ul>
+    </section>
+
+    <section id="quiz">
+      <h2>🧠 Phishing Quiz</h2>
+      <p><strong>1. What is a red flag in a phishing email?</strong></p>
+      <div class="quiz-question">
+        <input type="radio" name="q1" value="a"> A friendly greeting <br>
+        <input type="radio" name="q1" value="b"> A link to a trusted website <br>
+        <input type="radio" name="q1" value="c"> A request for urgent action and account verification <br>
+      </div>
+
+      <p><strong>2. What should you do if you receive a suspicious email?</strong></p>
+      <div class="quiz-question">
+        <input type="radio" name="q2" value="a"> Click the link to check it out <br>
+        <input type="radio" name="q2" value="b"> Report it and delete the email <br>
+        <input type="radio" name="q2" value="c"> Reply to the sender asking for clarification <br>
+      </div>
+
+      <button onclick="checkAnswers()">Submit Answers</button>
+      <div id="results"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
